@@ -83,20 +83,15 @@ Try {
             "5" {
                 $q = 1
                 write-host "Exiting. . ."
-            }
-           
+            }     
         }
-
     }
-
 }
 
 # catches if the main functions fail and shows the error message
 Catch { 
-
     Write-Host "An error occured in the main function"
     $error[0].Exception.Message
-
 }
 
 
